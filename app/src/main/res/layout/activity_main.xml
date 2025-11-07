@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:orientation="horizontal">
 
 
@@ -41,7 +41,7 @@
                         android:fontFamily="@font/bebasneueregular"
                         android:text="Hello, Akbar"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_32ssp" />
+                        android:textSize="@dimen/_29ssp" />
 
                     <TextView
                         android:id="@+id/ExtraText"
@@ -49,7 +49,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/plusjakartasansmedium"
                         android:text="Here’s your daily drop"
-                        android:textSize="@dimen/_14ssp" />
+                        android:textSize="@dimen/_12ssp" />
 
                 </LinearLayout>
 
@@ -93,7 +93,8 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
                 android:alignmentMode="alignMargins"
                 android:columnCount="4"
                 android:rowCount="2"
@@ -102,8 +103,8 @@
                 android:gravity="center">
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:layout_margin="@dimen/_3sdp"
@@ -127,13 +128,13 @@
                         android:text="RUNNING"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="0"
                     android:layout_column="1"
                     android:layout_margin="@dimen/_3sdp"
@@ -157,13 +158,13 @@
                         android:text="CYCLING"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="0"
                     android:layout_column="2"
                     android:layout_margin="@dimen/_3sdp"
@@ -187,12 +188,12 @@
                         android:text="HIKING"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="0"
                     android:layout_column="3"
                     android:layout_margin="@dimen/_3sdp"
@@ -216,13 +217,13 @@
                         android:text="GYM"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="1"
                     android:layout_column="0"
                     android:layout_margin="@dimen/_3sdp"
@@ -246,13 +247,13 @@
                         android:text="BASKET"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="1"
                     android:layout_column="1"
                     android:layout_margin="@dimen/_3sdp"
@@ -276,13 +277,13 @@
                         android:text="FOOTBALL"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="1"
                     android:layout_column="2"
                     android:layout_margin="@dimen/_3sdp"
@@ -306,13 +307,13 @@
                         android:text="PADEL"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
 
                 <LinearLayout
-                    android:layout_width="@dimen/_65sdp"
-                    android:layout_height="@dimen/_65sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_row="1"
                     android:layout_column="3"
                     android:layout_margin="@dimen/_3sdp"
@@ -338,7 +339,7 @@
                         android:text="MORE"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
 
             </GridLayout>

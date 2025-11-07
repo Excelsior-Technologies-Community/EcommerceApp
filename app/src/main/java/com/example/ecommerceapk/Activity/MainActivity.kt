@@ -5,7 +5,10 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.ecommerceapk.Adapter.SearchDashAdapter
 import com.example.ecommerceapk.Adapter.ViewPageAdapter
+import com.example.ecommerceapk.Domain.SearchDashClass
 import com.example.ecommerceapk.R
 import com.example.ecommerceapk.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
@@ -32,8 +35,8 @@ class MainActivity : AppCompatActivity() {
         val adapter = ViewPageAdapter(imageList)
         binding.viewPagerSlider.adapter = adapter
 
-
         autoSlideImages(imageList.size)
+        SearchDashCompo()
     }
 
     private fun autoSlideImages(imageCount: Int) {
@@ -52,5 +55,19 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         handler.removeCallbacksAndMessages(null)
+    }
+
+    public fun SearchDashCompo(){
+            val dataList=listOf(
+                SearchDashClass(R.drawable.product1,"Sepatu Superstar","Man shoes"),
+                SearchDashClass(R.drawable.product2,"Sneakers UltraBoost","Running shoes"),
+                SearchDashClass(R.drawable.product3,"RS-X3","Man shoes"),
+                SearchDashClass(R.drawable.product4,"Chuck Taylor All Star","Unisex shoes"),
+                SearchDashClass(R.drawable.product5,"Air Max 90","Man shoes")
+            )
+        var adapter = SearchDashAdapter(dataList)
+        binding.SearchDashboardView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.SearchDashboardView.adapter = adapter
     }
 }
