@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="aqua_spring">#EFF9ED</color>
+    <color name="poison_green">#39FF14</color>
+    <color name="grey">#666D80</color>
 </resources>

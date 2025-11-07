@@ -5,7 +5,7 @@
     android:id="@+id/mainView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/white"
     tools:context=".Activity.MainActivity">
 
     <ScrollView
@@ -37,7 +37,7 @@
                     <TextView
                         android:id="@+id/UserName"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="41dp"
                         android:fontFamily="@font/bebasneueregular"
                         android:text="Hello, Akbar"
                         android:textColor="@color/black"
@@ -83,29 +83,33 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_24sdp"
                 android:fontFamily="@font/bebasneueregular"
                 android:gravity="center_vertical"
                 android:text="ACTIVITIES YOU CAN DO"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_24ssp" />
 
-            <LinearLayout
+            <GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_85sdp"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="4"
+                android:rowCount="2"
+                android:rowOrderPreserved="false"
+                android:useDefaultMargins="true"
+                android:gravity="center">
 
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="0"
+                    android:layout_column="0"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -113,7 +117,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/runnung_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -123,19 +126,20 @@
                         android:gravity="center"
                         android:text="RUNNING"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="0"
+                    android:layout_column="1"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -143,7 +147,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/cycling_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,19 +156,20 @@
                         android:gravity="center"
                         android:text="CYCLING"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="0"
+                    android:layout_column="2"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -173,7 +177,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/hiking_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -183,19 +186,19 @@
                         android:gravity="center"
                         android:text="HIKING"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="0"
+                    android:layout_column="3"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -203,7 +206,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/gym_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -213,28 +215,20 @@
                         android:gravity="center"
                         android:text="GYM"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_85sdp"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                android:orientation="horizontal">
-
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="1"
+                    android:layout_column="0"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -242,7 +236,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/basket_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -252,19 +245,20 @@
                         android:gravity="center"
                         android:text="BASKET"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="1"
+                    android:layout_column="1"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -272,7 +266,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/football_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -282,19 +275,20 @@
                         android:gravity="center"
                         android:text="FOOTBALL"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="1"
+                    android:layout_column="2"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="wrap_content"
@@ -302,7 +296,6 @@
                         android:clipToOutline="true"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/padel_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -312,28 +305,29 @@
                         android:gravity="center"
                         android:text="PADEL"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="@dimen/_70sdp"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_row="1"
+                    android:layout_column="3"
                     android:layout_margin="@dimen/_3sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/circle_bg"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:background="@drawable/circle_bg">
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="@dimen/_21sdp"
                         android:layout_height="@dimen/_21sdp"
                         android:clipToOutline="true"
                         android:layout_gravity="center"
+                        android:paddingTop="@dimen/_5sdp"
                         android:scaleType="center"
                         app:srcCompat="@drawable/more_acti" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -343,13 +337,43 @@
                         android:gravity="center"
                         android:text="MORE"
                         android:textAlignment="center"
-                        android:textFontWeight="700"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_10ssp" />
                 </LinearLayout>
 
+            </GridLayout>
 
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:fontFamily="@font/bebasneueregular"
+                android:gravity="center_vertical"
+                android:text="Continue your search"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24ssp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/SearchDashboardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
