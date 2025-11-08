@@ -6,3 +6,7 @@ data class SearchDashClass(
     var category:String
 
     )
+data class FilterDashClass(
+
+    var title: String
+)

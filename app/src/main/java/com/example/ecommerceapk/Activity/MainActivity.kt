@@ -6,12 +6,13 @@ import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.ecommerceapk.Adapter.FilterDashAdapter
 import com.example.ecommerceapk.Adapter.SearchDashAdapter
 import com.example.ecommerceapk.Adapter.ViewPageAdapter
+import com.example.ecommerceapk.Domain.FilterDashClass
 import com.example.ecommerceapk.Domain.SearchDashClass
 import com.example.ecommerceapk.R
 import com.example.ecommerceapk.databinding.ActivityMainBinding
-import com.google.android.material.tabs.TabLayoutMediator
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         autoSlideImages(imageList.size)
         SearchDashCompo()
+        FilterDashCompo()
     }
 
     private fun autoSlideImages(imageCount: Int) {
@@ -57,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         handler.removeCallbacksAndMessages(null)
     }
 
-    public fun SearchDashCompo(){
+    private fun SearchDashCompo(){
             val dataList=listOf(
                 SearchDashClass(R.drawable.product1,"Sepatu Superstar","Man shoes"),
                 SearchDashClass(R.drawable.product2,"Sneakers UltraBoost","Running shoes"),
@@ -69,5 +71,21 @@ class MainActivity : AppCompatActivity() {
         binding.SearchDashboardView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.SearchDashboardView.adapter = adapter
+    }
+
+    private fun FilterDashCompo()
+    {
+        val dataList=listOf(
+            FilterDashClass("Last Chance Picks"),
+            FilterDashClass("Today’s Pick"),
+            FilterDashClass("Recently Viewed"),
+            FilterDashClass("Last Chance Picks"),
+            FilterDashClass("SPORT")
+        )
+        var adapter = FilterDashAdapter(dataList)
+        binding.FilterDashView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.FilterDashView.adapter = adapter
+
     }
 }
