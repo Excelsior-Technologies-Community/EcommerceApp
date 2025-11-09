@@ -5,4 +5,10 @@
     <color name="aqua_spring">#EFF9ED</color>
     <color name="poison_green">#39FF14</color>
     <color name="grey">#666D80</color>
+    <color name="light_grey">#C1C7CF </color>
+    <color name="border_grey">#F3F4F6</color>
+    <color name="icon_color">#A4ABB8</color>
+    <color name="search_bg">#F9F9F9</color>
+    <color name="search_txt">#808897</color>
+
 </resources>

@@ -3,6 +3,7 @@
     <style name="Base.Theme.EcommerceApk" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/white</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Theme.EcommerceApk" parent="Base.Theme.EcommerceApk" />
@@ -21,4 +22,6 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
     </style>
+
+
 </resources>

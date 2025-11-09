@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/aqua_spring" />
-            <corners android:radius="@dimen/_5sdp"/>
-        </shape>
-    </item>
-</selector>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/aqua_spring"/>
+    <corners android:radius="10dp"/>
+</shape>

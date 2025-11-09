@@ -53,4 +53,5 @@ dependencies {
     implementation ("com.intuit.ssp:ssp-android:1.1.1")
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation ("com.github.ismaeldivita:chip-navigation-bar:1.4.0")
 }

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/stroke_bg"    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/picDis"
+       android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.App.TopCorners"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/black_bg"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/picDis" >
+
+        <TextView
+            android:id="@+id/offPercentTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISC. 30%"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textColor="@color/poison_green"
+            android:fontFamily="@font/plusjakartasansbold"
+            android:textFontWeight="700"
+            android:textSize="@dimen/_8ssp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/picDis"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_8sdp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/companyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_15sdp"
+        />
+
+
+    <GridLayout
+        android:id="@+id/colorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="6"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:useDefaultMargins="true"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/companyIcon"
+        android:visibility="visible"      >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_bg"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="@color/black"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_bg"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:backgroundTint="@color/poison_green"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_bg"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/grey"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_bg"
+            android:layout_row="0"
+            android:layout_column="4" />
+
+
+    </GridLayout>
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/heartIcon"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_row="0"
+        android:layout_column="4"
+        android:layout_gravity="center"
+        android:background="@drawable/heart_icon"
+        android:layout_marginEnd="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorGrid"
+        app:layout_constraintEnd_toEndOf="@+id/colorGrid"
+        app:layout_constraintTop_toTopOf="@+id/colorGrid"
+        android:visibility="visible"  />
+
+    <TextView
+        android:id="@+id/titleDiscTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24sdp"
+        android:fontFamily="@font/plusjakartaassnssemibold"
+        android:gravity="center_vertical"
+        android:text="Sepatu Superstar"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorGrid" />
+
+    <TextView
+        android:id="@+id/CategoryDisTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_18sdp"
+        android:fontFamily="@font/plusjakartasansregular"
+        android:text="Man shoes"
+        android:fontWeight="400"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDiscTxt" />
+
+    <TextView
+        android:id="@+id/priceDisTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_18sdp"
+        android:fontFamily="@font/plusjakartasansmedium"
+        android:textFontWeight="500"
+        android:text="Rp510.00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:paddingEnd="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@+id/CategoryDisTxt"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryDisTxt"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/oldpriceoffTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_18sdp"
+        android:fontFamily="@font/plusjakartasansregular"
+        android:paddingEnd="@dimen/_3sdp"
+        android:text="Rp510.00"
+        android:textColor="@color/light_grey"
+        android:textFontWeight="400"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginStart="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/priceDisTxt"
+        app:layout_constraintStart_toEndOf="@+id/priceDisTxt"
+        app:layout_constraintTop_toTopOf="@+id/priceDisTxt"
+        android:visibility="visible"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

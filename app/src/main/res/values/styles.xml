@@ -1,0 +1,10 @@
+<resources>
+    <style name="ShapeAppearance.App.TopCorners" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/_6sdp</item>
+        <item name="cornerSizeTopRight">@dimen/_6sdp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+</resources>
