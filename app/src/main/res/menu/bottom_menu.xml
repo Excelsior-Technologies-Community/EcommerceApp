@@ -13,7 +13,7 @@
         android:title="Search" />
 
     <item
-        android:id="@+id/cart"
+        android:id="@+id/bag"
         android:icon="@drawable/bog_icon"
         android:title="Bag" />
 

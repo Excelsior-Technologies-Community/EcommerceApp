@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="100dp">                    >
+            android:paddingBottom="100dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,14 +34,16 @@
                     android:layout_marginVertical="@dimen/_14sdp"
                     android:layout_marginHorizontal="@dimen/_16sdp"   />
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:paddingVertical="@dimen/_10sdp"
                     android:text="Search"
                     android:fontFamily="@font/plusjakartasansregular"
                     android:textSize="@dimen/_14ssp"
-                    android:textColor="@color/light_grey"                 />
+                    android:textColor="@color/light_grey"
+                    android:background="@android:color/transparent"
+                    />
             </LinearLayout>
 
             <TextView

@@ -11,7 +11,7 @@ import com.example.ecommerceapk.databinding.ViewholderFilterdashBinding
 
 class FilterDashAdapter(  private val dataList: List<FilterDashClass>
 ) : RecyclerView.Adapter<FilterDashAdapter.ViewHolderClass>() {
-    private var selectedPosition:Int =-1
+    private var selectedPosition:Int =0
 
     private var lastselectedPosition:Int =-1
 

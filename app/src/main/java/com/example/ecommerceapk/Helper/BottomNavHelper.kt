@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.content.res.ColorStateList
 import androidx.core.content.ContextCompat
+import com.example.ecommerceapk.Activity.BagActivity
 import com.example.ecommerceapk.Activity.MainActivity
 import com.example.ecommerceapk.Activity.SearchActivity
 import com.example.ecommerceapk.R
@@ -33,6 +34,14 @@ object BottomNavHelper {
                 R.id.search -> {
                     if (activity !is SearchActivity) {
                         activity.startActivity(Intent(activity, SearchActivity::class.java))
+                        activity.overridePendingTransition(0, 0)
+                        activity.finish()
+                    }
+                    true
+                }
+                R.id.bag -> {
+                    if (activity !is BagActivity) {
+                        activity.startActivity(Intent(activity, BagActivity::class.java))
                         activity.overridePendingTransition(0, 0)
                         activity.finish()
                     }

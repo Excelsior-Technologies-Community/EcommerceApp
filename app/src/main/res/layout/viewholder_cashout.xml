@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_110sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/picBag"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/picBag"
+        app:layout_constraintStart_toEndOf="@+id/picBag"
+        app:layout_constraintTop_toTopOf="@+id/picBag">
+
+        <TextView
+            android:id="@+id/titlebagTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:fontFamily="@font/plusjakartaassnssemibold"
+            android:gravity="center_vertical"
+            android:text="NIKE AIR MAX 90"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toEndOf="@+id/picDis"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/CategorybagTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/plusjakartasansregular"
+            android:fontWeight="400"
+            android:text="Man shoes, Cream, EU 39"
+            android:textColor="@color/search_txt"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@+id/titlebagTxt"
+            app:layout_constraintTop_toBottomOf="@+id/titlebagTxt" />
+
+        <TextView
+            android:id="@+id/pricebagTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/plusjakartasansmedium"
+            android:paddingEnd="@dimen/_3sdp"
+            android:text="Rp510.00"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/CategorybagTxt"
+            app:layout_constraintTop_toBottomOf="@+id/CategorybagTxt" />
+
+        <TextView
+            android:id="@+id/oldpriceBagTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:fontFamily="@font/plusjakartasansregular"
+            android:paddingEnd="@dimen/_3sdp"
+            android:text="Rp510.00"
+            android:textColor="@color/search_txt"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/pricebagTxt"
+            app:layout_constraintStart_toEndOf="@+id/pricebagTxt"
+            app:layout_constraintTop_toTopOf="@+id/pricebagTxt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_21sdp"
+        android:layout_height="@dimen/_21sdp"
+        app:srcCompat="@drawable/trash_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,5 +10,7 @@
     <color name="icon_color">#A4ABB8</color>
     <color name="search_bg">#F9F9F9</color>
     <color name="search_txt">#808897</color>
+    <color name="bag_txt">#272835</color>
+    <color name="bagTotal_txt">#353849 </color>
 
 </resources>

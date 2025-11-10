@@ -5,6 +5,142 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Activity.BagActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_80sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="BAG"
+                android:textColor="@color/bag_txt"
+                android:textSize="@dimen/_20ssp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:textFontWeight="400"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="Order summary"
+                android:textColor="@color/bag_txt"
+                android:textSize="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:textFontWeight="400"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bagCashoutView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"     >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/border_grey"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plusjakartasansregular"
+                        android:text="Grand total"
+                        android:textColor="@color/bagTotal_txt"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plusjakartasansbold"
+                        android:text="Rp42,000"
+                        android:textColor="@color/bagTotal_txt"
+                        android:textFontWeight="700"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plusjakartasansmedium"
+                        android:text="Checkout"
+                        android:textAlignment="center"
+                        android:textColor="@color/poison_green"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                app:itemIconTint="@color/icon_color"
+                app:itemRippleColor="@android:color/transparent"
+                app:itemTextColor="@color/icon_color"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_menu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
