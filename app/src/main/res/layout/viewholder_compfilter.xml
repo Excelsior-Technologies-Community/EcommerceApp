@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_28sdp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:background="@drawable/full_circle_aqua"    >
+
+    <TextView
+        android:id="@+id/CategoryComFilterTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/bebasneueregular"
+        android:text="Man shoes"
+        android:fontWeight="400"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/wishlist_txt"
+       />
+
+</LinearLayout>

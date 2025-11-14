@@ -7,6 +7,8 @@ import androidx.core.content.ContextCompat
 import com.example.ecommerceapk.Activity.BagActivity
 import com.example.ecommerceapk.Activity.MainActivity
 import com.example.ecommerceapk.Activity.SearchActivity
+import com.example.ecommerceapk.Activity.WishlistActivity
+import com.example.ecommerceapk.Activity.ProfileActivity
 import com.example.ecommerceapk.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -42,6 +44,22 @@ object BottomNavHelper {
                 R.id.bag -> {
                     if (activity !is BagActivity) {
                         activity.startActivity(Intent(activity, BagActivity::class.java))
+                        activity.overridePendingTransition(0, 0)
+                        activity.finish()
+                    }
+                    true
+                }
+                R.id.wishlist -> {
+                    if (activity !is WishlistActivity) {
+                        activity.startActivity(Intent(activity, WishlistActivity::class.java))
+                        activity.overridePendingTransition(0, 0)
+                        activity.finish()
+                    }
+                    true
+                }
+                R.id.profile -> {
+                    if (activity !is ProfileActivity) {
+                        activity.startActivity(Intent(activity, ProfileActivity::class.java))
                         activity.overridePendingTransition(0, 0)
                         activity.finish()
                     }

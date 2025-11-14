@@ -21,7 +21,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="41dp"
+                android:layout_height="@dimen/_41sdp"
                 android:fontFamily="@font/bebasneueregular"
                 android:text="BAG"
                 android:textColor="@color/bag_txt"
@@ -33,7 +33,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="41dp"
+                android:layout_height="@dimen/_35sdp"
                 android:fontFamily="@font/bebasneueregular"
                 android:text="Order summary"
                 android:textColor="@color/bag_txt"

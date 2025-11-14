@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginBottom="@dimen/_20sdp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_41sdp"
+            android:fontFamily="@font/bebasneueregular"
+            android:text="PROFILE"
+            android:textColor="@color/bag_txt"
+            android:textSize="@dimen/_22ssp"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:textFontWeight="400"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_1sdp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/FullcircleImageView"
+                app:srcCompat="@drawable/profileimg"
+                app:strokeColor="@color/poison_green"
+                app:strokeWidth="@dimen/_1sdp"
+                app:contentPadding="@dimen/_4sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="Bhavik"
+                android:textColor="@color/bag_txt"
+                android:textSize="@dimen/_22ssp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:textFontWeight="400"
+               />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_bg">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/edit_icon" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/EditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakartasansmedium"
+                android:text="Edit Profile"
+                android:textSize="@dimen/_14ssp"
+                android:textFontWeight="500"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:drawableEnd="@drawable/back_icon" />
+
+
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@color/border_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/clipboard_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/MyOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:text="My Orders"
+                    android:textSize="@dimen/_14ssp"
+                    android:textFontWeight="500"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/back_icon" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@color/border_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/location_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/MyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:text="My Address"
+                    android:textSize="@dimen/_14ssp"
+                    android:textFontWeight="500"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/back_icon" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@color/border_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/unlock_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ChangePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:text="Change Password"
+                    android:textSize="@dimen/_14ssp"
+                    android:textFontWeight="500"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/back_icon" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@color/border_grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/logout_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plusjakartasansmedium"
+                    android:text="Log Out"
+                    android:textSize="@dimen/_14ssp"
+                    android:textFontWeight="500"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:drawableEnd="@drawable/back_icon" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@color/border_grey" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:itemIconTint="@color/icon_color"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemTextColor="@color/icon_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

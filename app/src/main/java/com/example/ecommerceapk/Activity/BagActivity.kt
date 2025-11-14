@@ -36,9 +36,10 @@ class BagActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.white)
         }
 
-        BottomNavHelper.setupBottomNav(this, binding.bottomNavigationView, R.id.bag)
 
         BagItemComp()
+
+        BottomNavHelper.setupBottomNav(this, binding.bottomNavigationView, R.id.bag)
 
     }
     private fun BagItemComp(){

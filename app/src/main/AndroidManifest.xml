@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcommerceApk">
         <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WishlistActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.BagActivity"
             android:exported="false" />
         <activity

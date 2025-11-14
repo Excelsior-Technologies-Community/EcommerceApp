@@ -4,23 +4,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ecommerceapk.Adapter.DiscItemAdapter.ViewHolderClass
 import com.example.ecommerceapk.Domain.DiscItemClass
 import com.example.ecommerceapk.databinding.ViewholderDisitemBinding
-import com.example.ecommerceapk.databinding.ViewholderSerachdashbordBinding
 
-class DiscItemAdapter (private val dataList: List<DiscItemClass>):
-    RecyclerView.Adapter<DiscItemAdapter.ViewHolderClass>(){
+class WishlistItemsAdapter (private val dataList: List<DiscItemClass>):
+    RecyclerView.Adapter<WishlistItemsAdapter.ViewHolderClass>(){
+
     class ViewHolderClass(val binding: ViewholderDisitemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
-
-    override fun onCreateViewHolder(parent: ViewGroup,viewType: Int  ): ViewHolderClass {
+    override fun onCreateViewHolder(   parent: ViewGroup,    viewType: Int    ): WishlistItemsAdapter.ViewHolderClass {
         val binding = ViewholderDisitemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolderClass(binding)
 
     }
 
-    override fun onBindViewHolder(holder: ViewHolderClass, position: Int  ) {
+    override fun onBindViewHolder(    holder: WishlistItemsAdapter.ViewHolderClass,     position: Int    ) {
+
         val item = dataList[position]
         holder.binding.picDis.setBackgroundResource(item.picdis)
         holder.binding.companyIcon.setBackgroundResource(item.compicon)
@@ -30,7 +31,13 @@ class DiscItemAdapter (private val dataList: List<DiscItemClass>):
         holder.binding.oldpriceoffTxt.text=item.oldpricedic
         holder.binding.priceDisTxt.text =item.pricedis
 
+        holder.binding.AddtoCart.visibility = View.VISIBLE
+        holder.binding.AddtoCart.isEnabled = true
+        holder.binding.AddtoCart.alpha = 1f
+
+
     }
+
 
     override fun getItemCount(): Int {
         return dataList.size
@@ -38,5 +45,3 @@ class DiscItemAdapter (private val dataList: List<DiscItemClass>):
 
 
 }
-
-

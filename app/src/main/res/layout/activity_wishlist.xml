@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.WishlistActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_41sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="WISHLIST"
+                android:textAlignment="center"
+                android:textColor="@color/bag_txt"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_20ssp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/CategoryFilterTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:background="@drawable/full_circle"
+                    android:drawableStart="@drawable/bog_icon"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:drawableTint="@color/poison_green"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:fontWeight="400"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:text="Collection"
+                    android:textAlignment="center"
+                    android:textColor="@color/poison_green"
+                    android:textSize="@dimen/_16ssp"
+                />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/CompFilterView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                   />
+
+            </LinearLayout>
+
+            </ScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WishlistItemsView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:itemIconTint="@color/icon_color"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemTextColor="@color/icon_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

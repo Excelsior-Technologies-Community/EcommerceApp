@@ -12,5 +12,7 @@
     <color name="search_txt">#808897</color>
     <color name="bag_txt">#272835</color>
     <color name="bagTotal_txt">#353849 </color>
+    <color name="wishlist_txt">#D6D6D6</color>
+
 
 </resources>
